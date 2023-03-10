@@ -1,0 +1,193 @@
+/* Laboratorio4
+Author: Camacho Bolaños Andrés 
+date: 9-03-2023
+Description: Laboratorio para repasar condiciones, funciones e investigar "while" en C
+*/
+
+//---------------------INSTRUCCIONES-----------------------
+
+
+
+
+//Cree una funcion "suma" que imprima la suma de dos valores solo si son pares, de lo conrario imprimirá que no son pares
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void suma_pares() {
+    int a;
+    int b;
+    int resultado;
+    
+    
+    
+    printf("Introduzca un número par:\n");
+    scanf("%d", &a);
+    printf("Introduzca otro número par:\n");
+    scanf("%d", &b);
+
+
+
+
+    if (a % 2 == 0 && b % 2 == 0) {
+        resultado = a + b;
+        printf("La suma de los números pares es: %d\n", resultado);
+        
+        
+        
+        
+    } else {
+        printf("No todos los números que fueron ingresados son pares.\n");
+    }
+}
+
+
+
+
+int main(){
+    suma_pares();
+    return 0;
+}
+
+
+
+
+//Cree una funcion "resta" que imprima la resta de dos valores solo si son múltiplos de 5, de lo conrario imprimirá que no son impares
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void resta_multiplo5() {
+    int a;
+    int b;
+    int resultado;
+    
+    
+    
+    printf("Introduzca un número que sea múltiplo de 5:\n");
+    scanf("%d", &a);
+    printf("Introduzca otro número que sea múltiplo de 5:\n");
+    scanf("%d", &b);
+
+
+
+
+    if (a % 5 == 0 && b % 5 == 0) {
+        resultado = a - b;
+        printf("La resta de los números es: %d\n", resultado);
+        
+        
+        
+        
+    } else {
+        printf("No todos los números que fueron ingresados son múltiplo de 5.\n");
+    }
+}
+
+
+
+
+int main(){
+    resta_multiplo5();
+    return 0;
+}
+
+
+
+
+//Cree una funcion "division" que imprima la división de dos valores solo si el resultado no tiene reciduo, de lo conrario imprimirá que no es una división exacta
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void division_sin_residuo() {
+    int a;
+    int b;
+    int resultado;
+    
+    
+    
+    printf("Introduzca un número:\n");
+    scanf("%d", &a);
+    printf("Introduzca otro número:\n");
+    scanf("%d", &b);
+
+
+
+
+    if (a != 0 && a % b == 0) {
+        resultado = a / b;
+        printf("El resultado de la división es: %d\n", resultado);
+    }
+    else {
+        printf("La división no es exacta.\n");
+    }
+}
+
+
+
+
+
+int main(){
+    division_sin_residuo();
+    return 0;
+}
+
+
+
+
+//Cree una funcion "multiplicacion" que imprima la multiplicación de dos valores solo si son mayores a 10, de lo conrario imprimirá que no son mayores a 10
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void multiplicacion_mayor10() {
+    int a;
+    int b;
+    int resultado;
+    
+    
+
+
+    printf("Introduzca un número:\n");
+    scanf("%d", &a);
+    printf("Introduzca otro número:\n");
+    scanf("%d", &b);
+
+
+
+
+    if (a > 10 && b > 10) {
+        resultado = a * b;
+        printf("El resultado de la multiplicación es: %d\n", resultado);
+    }
+    else {
+        printf("No todos los números que se multiplican son mayores a 10.\n");
+    }
+}
+
+
+
+
+
+int main(){
+    multiplicacion_mayor10();
+    return 0;
+}
+
+
+
+
+/*¿Qué hace el While?
+Es un tipo de estructura de control que nos permitirá repetir un bloque de código en forma de ciclo (bucle) mientras un a condición se cumpla.
+Existen dos tipos de While:
+Do While: Primero realiza acción al menos una vez y luego evalúa si la condición es verdadera.
+While Do: Primero evalúa si la condición se cumple y después empezará el ciclo.*/
