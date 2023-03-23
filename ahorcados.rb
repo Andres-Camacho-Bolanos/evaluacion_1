@@ -1,6 +1,6 @@
 def ahorcados
   palabras = [
-    ["causas raiz", "¿Cómo se le llaman a las categorías para señalar los puntos que dan origen al problema?"],
+    ["causas", "¿Cómo se le llaman a las categorías para señalar los puntos que dan origen al problema?"],
     ["subcausas", "Detallan los factores que dan origen a las causas:"],
     ["diagrama de ishikawa", "¿De qué otra forma se conoce el diagrama de pescado?"],
     ["brainstorming", "Método para identificar las posibles causas en un diagrama de pescado:"],
@@ -56,7 +56,7 @@ def ahorcados
       puts "Lo siento, has perdido. La palabra era '#{palabra_seleccionada}'."
     else
       puts "-----------------------------------------"
-      puts "¡Felicidades, has ganado! La palabra era '#{palabra_seleccionada}'."
+      puts "¡Felicidades! La palabra era '#{palabra_seleccionada}'."
       palabras.delete(par_seleccionado)
     end
   end
